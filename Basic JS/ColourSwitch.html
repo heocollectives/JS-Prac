@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Switch JS</title>
+</head>
+<body>
+<style>    
+h1 { 
+    font-size: 3em;
+    text-align: center;
+    color:Black;
+    margin: auto;
+    display: block;
+    margin-top: 40vh;
+    }
+
+button {
+    margin: auto;  
+    display: block;
+    outline: none;
+    padding: 20px;
+    background-color: transparent;
+    color: black;
+    border-radius: 5px;  
+    border: 1px solid black;
+}
+button:hover {
+    background-color: black;
+    }
+</style>
+
+    <body id="background">
+        <div>
+            <h1 id="description">background color: #ffffff</h1>
+        </div>    
+        <div class="wrapper">   
+            <button onclick="change()" id="button">Click Me!</button>
+        </div>
+
+    <script>
+         function change(){
+            let n = (Math.random() * 0xfffff * 1000000).toString(16);
+            document.getElementById("description").innerHTML = 'background color: #' + n.slice(0, 6);
+            document.getElementById("background").style.backgroundColor = '#' + n.slice(0, 6);
+            document.getElementById("button").style.color = '#ffffff';
+            document.getElementById("description").style.color = '#000000';
+        }
+    </script>
+</body>
+</html>

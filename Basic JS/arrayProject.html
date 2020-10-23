@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make an Array Project</title>
+</head>
+<body>
+    <div>
+            <h1>Make an Array!</h1>
+            <label>Enter a value:</label>
+            <input type="text" name="text" id="submitItem">
+            <br>
+            <button onclick="makeAnArray()">Add an item</button>
+            <button onclick="clear()">Remove an item</button>
+            <button onclick="clearAll()">Remove all items</button>
+            <p id="output"></p>
+    
+        </div>
+    <script>
+            var list = [];
+        
+            function makeAnArray(submitItem){
+            var submitItem = document.getElementById("submitItem").value;    
+
+            list.push(submitItem);
+            
+            document.getElementById("output").innerHTML = list;
+            console.log(list);
+
+            document.getElementById('submitItem').value = '';
+        }
+        
+        //in progress
+        /*function clear(){
+            list.pop();
+            document.getElementById("output").innerHTML = list;
+        }*/
+
+        function clearAll(){
+            list = [];
+            document.getElementById("output").innerHTML = "";
+        };
+    </script>
+</body>
+</html>

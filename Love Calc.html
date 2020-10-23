@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Num Generator/Love Calculator</title>
+</head>
+<body>
+    <script>
+        // var n = Math.random(); //generates random no (always generates 0 - 0.99) (returns a pseudo-random number 0 - 1)
+        // n = n*6; // to turn it into a num 1 - 6
+        // n = Math.floor(n) + 1; // rounds it down to the nearest whole num (adding + 1 generates num 1 - 6 now)
+        // console.log(n); //returns the num when rolling a dice (a random pseudo num)
+        // Randomisation and JS
+
+prompt("What is your name?");
+prompt("what is your loves name?");
+
+let loveCalc = Math.random() * 100;
+    loveCalc = Math.floor(loveCalc) + 1;
+    console.log(loveCalc);
+
+// conditionals can be used with a range by using < > => <=
+if (loveCalc > 70) {
+    alert("Your love score is " + loveCalc + "% " + " your love is TRUE!");
+} else {
+    alert("Your love score is " + loveCalc + "% ");
+}
+
+//Creating a custom message depending on how high or low the score is.
+//Using if/Else statements with conditionals & logic
+
+    </script>
+</body>
+</html>
