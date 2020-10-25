@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo01"></p>
+    <script> //example of an object: the syntax {} classifies the object
+    //Methods: function within an object.
+    //using objects and methods to pull up data into html.
+    //the variables of object(person) are the properties of an object 
+        let person = {
+            firstName: "David",
+            lastName: "Heo",
+            age: 26,
+            pets: false,
+
+            printOutMethod: function () {
+
+                return this.firstName + " " + this.lastName;
+            }
+        }
+
+        // let multiDetail = (person.firstName + " " + person.lastName + " " + person.age); 
+        document.getElementById("demo01").innerHTML = person.printOutMethod();
+    </script>
+</body>
+</html>

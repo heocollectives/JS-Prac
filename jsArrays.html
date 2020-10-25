@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections working with JS Arrays</title>
+</head>
+<body>
+    <p id="demo">demo</p>
+    <script>
+        // Array is used to store collection of items that are related, stored within a same container/variable.
+        // To retrive a piece of data: i.e. var my egg = eggs[1]; (remember that all data is counter from '0')
+        // eggs.length: counts the data inside the variable egg and gives back its whole value
+
+        var guestList = ["David", "Sam", "Jess", "Cam", "Luke"];
+        // console.log(guestList[1]);
+        // console.log(guestList[4]);
+        // var a = guestList.includes("David");
+        // document.getElementById("demo").innerHTML = a; //In order to get an output from a method, the method must be called out i.e. from an innerHTML id. 
+        // guestList.includes([1]); finds out if an array includes a particular item.
+    //Create prompt that asks the guest, what is their name, check name, does exist alert "welcome", if not "maybe next time"
+        var guestName = prompt("What is your name ")
+        var list = guestList.includes(guestName);
+
+        if(list) {
+            alert("Welcome ")
+        } else {
+            alert("Sorry better luck next time ")
+        }
+
+        document.getElementById("demo").innerHTML = list;
+ //This is how collection of data is stored within an Array using if/else statement to output an answer.
+    
+    </script>
+</body>
+</html>

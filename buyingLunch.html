@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's Buying Lunch Challenge</title>
+</head>
+<body>
+    <script>
+        let names = ["Angela", "Ben", "Jenny", "Micahel", "Chloe"];
+
+        let numberOfPeople = names.length;
+        let randomPersonPosition = Math.floor(Math.Random() * numberOfPeople); // 0-0.9999, 0.49999 the Math.floor() method is used to round it off to make it 1 -5
+        let randomPerson = names[randomPersonPosition];
+
+        return randomPerson + " is going to buy lunch today!";
+    </script>
+</body>
+</html>

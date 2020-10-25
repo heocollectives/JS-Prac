@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Date</title>
+</head>
+<body>
+
+    <h2>JavaScript new Date()</h2>​
+
+<p id="demo"></p>​
+    <script>
+
+// let date = new Date();
+
+// document.getElementById("demo").innerHTML = date.getDate();
+
+
+// let date = new Date();
+// date.setFullYear(1994);
+// date.setHours(23);
+// date.setMonth(08);
+// date.setDate(28);
+// document.getElementById("demo").innerHTML = date.toDateString();
+
+let today = new Date();
+let future = new Date();
+
+future.setFullYear(2080, 08, 28);
+
+if (future > today) {
+        text= "today is before the year Sep, 2080"
+}
+else {
+        text = "Today is after the year Sep, 2080."
+    }
+
+document.getElementById("demo").innerHTML = text;
+
+    
+
+
+    </script>
+</body>
+</html>

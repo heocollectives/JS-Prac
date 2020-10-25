@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Leap Year Challenge</title>
+</head>
+<body>
+    <p id="demo1">what is the leap year</p>
+    <script>
+        //Incorporate the given resource 'flow chart' to assist with translating the instructions to logical code. 
+        function isLeap(year) {
+            if (year % 4 === 0) { //% is used to divide the year by 4 (% calculates if the remainder is = (0 reflects on the result as an even num)
+            
+                if (year % 100 === 0) {
+
+                    if (year % 400 === 0) {
+                        return "Leap Year ."
+            } else {
+                return "Not a Leap year. "
+            }
+            } else {
+                return"Leap Year."
+            }
+            } else {
+                return "Not a Leap year. "
+            }
+        }
+        document.getElementById("demo1").innerHTML = isLeap(2020); // calls the return function to the innerhtml id element.
+    </script>
+</body>
+</html>

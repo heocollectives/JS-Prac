@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loops</title>
+</head>
+<body>
+    <script>
+        //while (something is true) { Do something } 
+
+// var i = 1;
+
+// while (i < 2) {
+//     console.log(i); i++;
+// }
+// let output = [];
+// let count = 1;
+
+// function fizzBuzz() {
+
+//     while (count <= 100) {
+
+//     if (count % 3 === 0 && count % 5 === 0) { //order of the if statements matter hugely
+//         output.push("FizzBuzz");
+//     } 
+//     else if (count % 3 === 0) {
+//         output.push("Fizz");
+//     }
+//     else if (count % 5 ===0) {
+//         output.push("Buzz");
+//     }
+//     else {
+//         output.push(count);
+//         }
+//     count++;
+//     }
+//     console.log(output); // the fizzBuzz() function must be called to run whileLoop
+// } 
+
+// using a FOR LOOP //
+    let output= [];
+    function fizzBuzz() {
+    for (let count = 1; count < 101; count++) {
+    
+    if (count % 3 === 0 && count % 5 === 0) { //order of the if statements matter hugely
+        output.push("FizzBuzz");
+    } 
+    else if (count % 3 === 0) {
+        output.push("Fizz");
+    }
+    else if (count % 5 ===0) {
+        output.push("Buzz");
+    }
+    else {
+        output.push(count);
+        }
+    }
+    }
+    console.log(output); // the fizzBuzz() function must be called to run whileLoop
+
+
+    </script>
+</body>
+</html>
